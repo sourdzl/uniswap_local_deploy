@@ -1,6 +1,7 @@
 source .env
 // install foundry
 curl -L https://foundry.paradigm.xyz | bash
+foundryup
 
 // deploy uniswap v2 to local geth node, from the specified account in .env
 cd lib/v2-core && forge create UniswapV2Factory \
