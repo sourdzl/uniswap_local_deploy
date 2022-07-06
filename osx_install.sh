@@ -9,8 +9,15 @@ foundryup
  --private-key $(PRIVATE_KEY) \
  --constructor-args $(PUBLIC_KEY) \\ mints a bunch to this address
 
+
+// deploy WETH
+cd cd lib/WETH10 && forge create WETH10 \
+ --rpc-url $(ETH_RPC_URL) \
+ --private-key $(PRIVATE_KEY) \
+ --constructor-args $(PUBLIC_KEY) \\ vanilla WETH
+
 // deploy uniswap v2 to local geth node, from the specified account in .env
-cd lib/v2-core && forge create UniswapV2Factory \
+cd ../v2-core && forge create UniswapV2Factory \
 --rpc-url $(ETH_RPC_URL) \
 --private-key $(PRIVATE_KEY) \
 --constructor-args $(PUBLIC_KEY)
