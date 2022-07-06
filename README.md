@@ -1,4 +1,5 @@
-This starter repo deploys uniswap v2 to a locally running geth chain.
+This starter repo deploys uniswap v2, a dummy ERC20, and WETH  to a locally running geth chain.  The intended use case is to develop flashbots
+mev-boost related infrastructure for post-merge ethereum.
 
 You will need to update the .env file to include a private key/public key pair.  the default eth RPC should be fine if you follow the instructions below.
 
