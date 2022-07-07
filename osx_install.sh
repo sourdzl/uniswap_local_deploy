@@ -18,14 +18,14 @@ forge create WBTC \
 # WBTC at 0x13119ce5e5bf39d648bc18a1a7078bb9de13b705
 
 # deploy WETH
-cd cd lib/WETH10 && forge create WETH10 \
+cd lib/WETH10 && forge create WETH10 \
  --rpc-url $(ETH_RPC_URL) \
  --private-key $(PRIVATE_KEY) \
  --constructor-args $(PUBLIC_KEY) # vanilla WETH
 
 # WETH deployed to 0x293d01a0fc9ce0b706946a6edd1204e3375bb43c
 
-// deploy uniswap v2 to local geth node, from the specified account in .env
+# deploy uniswap v2 to local geth node, from the specified account in .env
 cd ../v2-core && forge create UniswapV2Factory \
 --rpc-url $(ETH_RPC_URL) \
 --private-key $(PRIVATE_KEY) \

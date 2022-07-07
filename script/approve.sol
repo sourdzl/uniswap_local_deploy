@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity >=0.6;
 
+import "forge-std/console.sol";
 import "forge-std/Script.sol";
 import "../src/UST.sol";
 import "../src/WBTC.sol";
@@ -19,6 +20,11 @@ contract ApproveScript is Script {
             // 0xef9407f213F26B20eEDF68691E27e45b84d34E0E,
             10000000000000000000000
         );
+        console.log("UST balance:");
+        console.log(ust.balanceOf[0xc086b359a6f82372e1e51b9afe9fea618d70f7a6]);
+
+        console.log("WBTC balance:");
+        console.log(wbtc.balanceOf[0xc086b359a6f82372e1e51b9afe9fea618d70f7a6]);
 
         wbtc.approve(
             0xeb493554cd86Cb2DbE8a2113033846F819CD3080,

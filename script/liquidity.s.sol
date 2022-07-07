@@ -3,16 +3,13 @@ pragma solidity >=0.6;
 
 import "forge-std/Script.sol";
 import "../lib/v2-periphery/contracts/UniswapV2Router02.sol";
+import "../lib/v2-core/contracts/UniswapV2Factory.sol";
 
 contract LiquidityScript is Script {
     function setUp() public {}
 
     function run() public {
         vm.broadcast();
-
-        UniswapV2Router02 addr = UniswapV2Router02(
-            payable(0xef9407f213F26B20eEDF68691E27e45b84d34E0E)
-        );
 
         //addr.call( bytes4( keccak256("addLiquidity(address,address,uint,uint,uint,uint)")),
         //UniswapV2Router02 router = new UniswapV2Router02(
