@@ -17,13 +17,13 @@ contract ApproveScript is Script {
         ust.approve(
             0xeb493554cd86Cb2DbE8a2113033846F819CD3080,
             // 0xef9407f213F26B20eEDF68691E27e45b84d34E0E,
-            10000000000000000000
+            10000000000000000000000
         );
 
         wbtc.approve(
             0xeb493554cd86Cb2DbE8a2113033846F819CD3080,
             //0xef9407f213F26B20eEDF68691E27e45b84d34E0E,
-            10000000000000000000
+            10000000000000000000000
         );
 
         vm.stopBroadcast();
